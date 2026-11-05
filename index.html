@@ -817,7 +817,7 @@
   const errorText = document.getElementById('password-error');
 
   function unlockPage() {
-    overlay.classList.add('hidden');
+    overlay.style.display = 'none';
     app.style.display = 'block';
     sessionStorage.setItem('kommandAccess', 'true');
     input.value = '';
